@@ -364,48 +364,56 @@ Mad Allen's style is certainly different, but whether it's unique and groundbrea
     slideIndex++; // Increment slideIndex after displaying the current slide
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
-         document.getElementById("news").addEventListener("click", function() {
-            document.getElementById("content1").style.display = "block";
-            document.getElementById("content2").style.display = "none";
-            document.getElementById("content3").style.display = "none";
-            document.getElementById("content4").style.display = "none";
-            document.getElementById("content5").style.display = "none";
-            // Hide content for other pages and show content for Page 1
-        });
+document.getElementById("news").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of anchor tags
+    document.getElementById("content1").style.display = "block";
+    document.getElementById("content2").style.display = "none";
+    document.getElementById("content3").style.display = "none";
+    document.getElementById("content4").style.display = "none";
+    document.getElementById("content5").style.display = "none";
+    // Hide content for other pages and show content for Page 1
+});
 
-        document.getElementById("music").addEventListener("click", function() {
-            document.getElementById("content1").style.display = "none";
-            document.getElementById("content2").style.display = "block";
-            document.getElementById("content3").style.display = "none";
-            document.getElementById("content4").style.display = "none";
-            document.getElementById("content5").style.display = "none";
-            // Hide content for other pages and show content for Page 2
-        });
-        
-        document.getElementById("merch").addEventListener("click", function() {
-            document.getElementById("content1").style.display = "none";
-            document.getElementById("content2").style.display = "none";
-            document.getElementById("content3").style.display = "block";
-            document.getElementById("content4").style.display = "none";
-            document.getElementById("content5").style.display = "none";
-            // Hide content for other pages and show content for Page 3
-        });
-        document.getElementById("contact").addEventListener("click", function() {
-            document.getElementById("content1").style.display = "none";
-            document.getElementById("content2").style.display = "none";
-            document.getElementById("content3").style.display = "none";
-            document.getElementById("content4").style.display = "block";
-            document.getElementById("content5").style.display = "none";
-            // Hide content for other pages and show content for Page 4
-        });
-        document.getElementById("extras").addEventListener("click", function() {
-            document.getElementById("content1").style.display = "none";
-            document.getElementById("content2").style.display = "none";
-            document.getElementById("content3").style.display = "none";
-            document.getElementById("content4").style.display = "none";
-            document.getElementById("content5").style.display = "block";
-            // Hide content for other pages and show content for Page 5
-        });
+document.getElementById("music").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of anchor tags
+    document.getElementById("content1").style.display = "none";
+    document.getElementById("content2").style.display = "block";
+    document.getElementById("content3").style.display = "none";
+    document.getElementById("content4").style.display = "none";
+    document.getElementById("content5").style.display = "none";
+    // Hide content for other pages and show content for Page 2
+});
+
+document.getElementById("merch").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of anchor tags
+    document.getElementById("content1").style.display = "none";
+    document.getElementById("content2").style.display = "none";
+    document.getElementById("content3").style.display = "block";
+    document.getElementById("content4").style.display = "none";
+    document.getElementById("content5").style.display = "none";
+    // Hide content for other pages and show content for Page 3
+});
+
+document.getElementById("contact").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of anchor tags
+    document.getElementById("content1").style.display = "none";
+    document.getElementById("content2").style.display = "none";
+    document.getElementById("content3").style.display = "none";
+    document.getElementById("content4").style.display = "block";
+    document.getElementById("content5").style.display = "none";
+    // Hide content for other pages and show content for Page 4
+});
+
+document.getElementById("extras").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of anchor tags
+    document.getElementById("content1").style.display = "none";
+    document.getElementById("content2").style.display = "none";
+    document.getElementById("content3").style.display = "none";
+    document.getElementById("content4").style.display = "none";
+    document.getElementById("content5").style.display = "block";
+    // Hide content for other pages and show content for Page 5
+});
+
         // Add event listeners for other link images as needed
     </script>
 </body>
