@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Hate</title>
+    <style>
+    a {
+            color: #F46E17;
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Color for links on hover */
+        a:hover {
+            color: #F46E17;
+	    text-decoration: underline overline;
+	    text-decoration-skip-ink: auto;
+        }
+
+        /* Color for visited links */
+        a:visited {
+            color: #F46E17;
+            text-decoration: none;
+        }
+        body {
+            background-color: black;
+            color: grey;
+            font-family: Courier New, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        .slideshow-container {
+            
+            margin: 0 auto;
+            width: 90%;
+            padding: 10px;
+            
+        }
+         @keyframes fade {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    
+        .header-slide {
+            display: none;
+             animation-name: fade;
+        animation-duration: 1.5s;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration:1.5s;
+            opacity:1;
+            }
+         
+        .header-slide.active {
+            opacity: 1; /* Show slide */
+            }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+            
+        }
+ .navigation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+            justify-content: center;
+            align-items: center;
+            gap: 2px; /* Adjust gap between items */
+            margin-top: 10px; /* Adjust margin as needed */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        .navigation a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        .navigation a img {
+            max-width: 100%; /* Maximum width of link images */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer;
+            
+        }
+        .image-container {
+            display: none; /* Initially hide the image container */
+            margin-top: 20px; /* Add some space between link images and the image */
+            color: #888;
+            font-family: Courier New, monospace; /* Use Courier New font */
+    		text-align: center; 
+    		max-width: 90%; /* Limit maximum width to 90% of the screen */
+   			margin: 0 auto; /* Center the content horizontally */
+     		font-size: calc(1.25vw + 10px); /* Responsive font size based on viewport width */
+      		font-weight: 500;
+        }
+        .image-container img {
+            max-width: 90%; /* Limit the maximum width of the image */
+            height: auto; /* Maintain aspect ratio */
+            }
+        .content1 {
+            display: none; /* Initially hide content */
+             color: #888; /* Grey color */
+    font-family: Courier New, monospace; /* Use Courier New font */
+    text-align: justify; /* Left-align text */
+    max-width: 80%; /* Limit maximum width to 90% of the screen */
+    margin: 0 auto; /* Center the content horizontally */
+     font-size: calc(1.25vw + 10px); /* Responsive font size based on viewport width */
+      
+}
+
+		.content2 {
+        	display: none;
+            color: #888;
+            font-family: Courier New, monospace; /* Use Courier New font */
+    		text-align: center; 
+    		max-width: 80%; /* Limit maximum width to 90% of the screen */
+   			margin: 0 auto; /* Center the content horizontally */
+     		font-size: calc(1.25vw + 10px); /* Responsive font size based on viewport width */
+      		font-weight: 500;
+            
+}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/2knhsDr/025.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/7ScJKpN/001.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/tH8L8SW/006.png" alt="Mad Allen" style="width:100%">
+        </div>
+         <div class="header-slide fade active">
+            <img src="https://i.ibb.co/f4P5m1v/010.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/Y29HG7W/002.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/Thtkd7W/013.png" alt="Mad Allen" style="width:100%">
+        </div>
+         <div class="header-slide fade active">
+            <img src="https://i.ibb.co/w6hchkz/021.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/nQHDhg0/014.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/Pt1c9NY/011.png" alt="Mad Allen" style="width:100%">
+        </div>
+         <div class="header-slide fade active">
+            <img src="https://i.ibb.co/BPy7skr/016.png" alt="Mad Allen" style="width:100%">
+        </div>
+         <div class="header-slide fade active">
+            <img src="https://i.ibb.co/mN7sWfH/004.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/KG1NDVc/017.png" alt="Mad Allen" style="width:100%">
+        </div>
+         <div class="header-slide fade active">
+            <img src="https://i.ibb.co/592tdzv/003.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/Kz3v2RB/018.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/CWhLJ5S/005.png" alt="Mad Allen" style="width:100%">
+        </div>
+         <div class="header-slide fade active">
+            <img src="https://i.ibb.co/pWrtTd8/020.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/9VbfG2w/007.png" alt="Mad Allen" style="width:100%">
+        </div>
+        <div class="header-slide fade active">
+            <img src="https://i.ibb.co/fDmvVm7/024.png" alt="Mad Allen" style="width:100%">
+        </div>
+         <div class="header-slide fade active">
+            <img src="https://i.ibb.co/Mf5YMSV/009.png" alt="Mad Allen" style="width:100%">
+        </div>
+	 <div class="header-slide fade active">
+            <img src="https://i.ibb.co/F5ZhxVX/012.png" alt="Mad Allen" style="width:100%">
+        </div>
+	 <div class="header-slide fade active">
+            <img src="https://i.ibb.co/ZK2yWSW/015.png" alt="Mad Allen" style="width:100%">
+        </div>
+ 	 <div class="header-slide fade active">
+            <img src="https://i.ibb.co/6FwPkYQ/019.png" alt="Mad Allen" style="width:100%">
+        </div>
+	 <div class="header-slide fade active">
+            <img src="https://i.ibb.co/FYc75g5/022.png" alt="Mad Allen" style="width:100%">
+        </div>
+	 <div class="header-slide fade active">
+            <img src="https://i.ibb.co/fQ088m1/023.png" alt="Mad Allen" style="width:100%">
+        </div>
+
+
+        <!-- Add more slide elements with images as needed -->
+    </div>
+   
+    <div class="navigation">
+        <a id="news" ><img src="https://i.ibb.co/N92Dcs4/news.png" alt="news"></a>
+        <a id="music"><img src="https://i.ibb.co/MNCR4Qh/music.png" alt="music"></a>
+        <a id="merch"><img src="https://i.ibb.co/7G7tLVT/merch.png" alt="merch"></a>
+        <a id="contact"><img src="https://i.ibb.co/6y93N6P/contact.png"  alt="contact"></a>         
+        <a id="extras"><img src="https://i.ibb.co/4g25KQg/extras.png" alt="extras" ></a>
+       
+
+        <!-- Add more links with images as needed -->
+    </div>
+    
+    <div id="content1" class="content1"><strong>April 17th, 2024</strong><br>The new site is up and running. Check back often for updates.<br><strong>Mad Allen</strong><br><br><br>
+    </div>
+
+<div id="content2" class="content2">Please click below to enjoy a selection of specially curated songs chosen for your listening pleasure:<br>
+<br>
+<a href="https://soundcloud.com/madallen/mind-sweeper">Mind Sweeper</a>
+<br><br>
+<audio controls>
+  <source src="https://soundcloud.com/madallen/mind-sweeper" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio><br><br>
+<a href="https://soundcloud.com/madallen/mean-wild-road-of-mistakes">Road of Mistakes</a>
+<br><br>
+<audio controls>
+  <source src="https://soundcloud.com/madallen/mean-wild-road-of-mistakes" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio><br><br>
+<a href="https://soundcloud.com/madallen/fever">Fever</a>
+<br><br>
+<audio controls>
+  <source src="https://soundcloud.com/madallen/fever" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio><br><br>
+<a href="https://soundcloud.com/madallen/fail-1">Fail</a>
+<br><br>
+<audio controls>
+  <source src="https://soundcloud.com/madallen/fail-1" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio><br><br>
+<a href="https://soundcloud.com/madallen/caught">Caught</a>
+<br><br>
+<audio controls>
+  <source src="https://soundcloud.com/madallen/caught" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio><br><br>
+<a href="https://soundcloud.com/madallen/someday-never-comes-creedence">Someday Never Comes (CCR)</a>
+<br><br>
+<audio controls>
+  <source src="https://soundcloud.com/madallen/someday-never-comes-creedence" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio><br><br>
+<a href="https://soundcloud.com/madallen/hallelujah">Hallelujah (Leonard Cohen)</a>
+<br><br>
+<audio controls>
+  <source src="https://soundcloud.com/madallen/hallelujah" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio><br><br>
+
+
+<br>
+</div>
+ 
+
+ <div class="image-container" id="content3">
+ <p>For now please email me here: <br><a href="mailto:madallenmusic@gmail.com">madallenmusic@gmail.com</a><br>for information about purchasing merchandise or come to one of my shows</p>
+ 
+        <img src="https://i.ibb.co/db784YV/madmerch.png" alt="madallenmusic@gmail.com for merch info" id="displayedImage"><br><br><br>
+    </div>
+<div id="content4" class="content2">
+ <p>Email:<br>
+    <a href="mailto:madallenmusic@gmail.com">madallenmusic@gmail.com</a>
+    <br>
+    <br>
+Mad Allen is a self-proclaimed artist, whose fusion style is a jumbled concoction of seemingly mismatched musical genres that confound and baffle listeners. Some have described his music as a trainwreck, while others have labeled it as avant-garde or "nice", though it's hard to say which is more accurate. Despite this, or perhaps because of it, he manages to create a strange connection with his audience, leaving some moved and inspired while others scratch their heads in confusion.
+<br>
+    <br>
+With each performance, Mad Allen pushes the boundaries of what's considered acceptable in music, elevating his craft to an art form that can only be described as perplexing. His music is a testament to his unwavering commitment to something, although it's not entirely clear what that something is, but it's there.
+<br>
+    <br>
+Mad Allen's style is certainly different, but whether it's unique and groundbreaking is up for debate. Some have called him a master of his craft, while others have dismissed him as a hack with an inflated ego. One thing's for certain: his performances are not to be missed if you want to have an experience. Send <a href="mailto:madallenmusic@gmail.com">emails</a> to him for good (musical) times or text/phone him at (778) 939-6288.
+<br>
+    <br>
+    <a href="https://www.facebook.com/madallenmusic">Facebook</a>
+    <br><br>
+    <a href="https://soundcloud.com/madallen">Soundcloud</a>
+    <br><br><br>
+    </p>
+    
+    </div>
+<div id="content5" class="content2">
+<p>This section of the website is still currently under development. Check back soon for videos, pics, links to other projects, and other stuff that you'd categorize under "extras".<br><br><br></p>
+</div>
+    
+    
+
+<!-- Add content for other pages -->
+
+
+    <script>
+        // URLs of your images
+        var imageUrls = [
+            "https://i.ibb.co/2knhsDr/025.png",
+            "https://i.ibb.co/7ScJKpN/001.png",
+            "https://i.ibb.co/tH8L8SW/006.png",
+	    "https://i.ibb.co/f4P5m1v/010.png",
+	    "https://i.ibb.co/Y29HG7W/002.png",
+	    "https://i.ibb.co/Thtkd7W/013.png",
+	    "https://i.ibb.co/w6hchkz/021.png",
+	    "https://i.ibb.co/nQHDhg0/014.png",
+	    "https://i.ibb.co/Pt1c9NY/011.png",
+	    "https://i.ibb.co/BPy7skr/016.png",
+	    "https://i.ibb.co/mN7sWfH/004.png",
+	    "https://i.ibb.co/KG1NDVc/017.png",
+	    "https://i.ibb.co/592tdzv/003.png",
+	    "https://i.ibb.co/Kz3v2RB/018.png",
+	    "https://i.ibb.co/CWhLJ5S/005.png",
+	    "https://i.ibb.co/pWrtTd8/020.png",
+	    "https://i.ibb.co/9VbfG2w/007.png",
+	    "https://i.ibb.co/fDmvVm7/024.png",
+	    "https://i.ibb.co/Mf5YMSV/009.png",
+	    "https://i.ibb.co/F5ZhxVX/012.png",
+	    "https://i.ibb.co/ZK2yWSW/015.png",
+	    "https://i.ibb.co/6FwPkYQ/019.png",
+	    "https://i.ibb.co/FYc75g5/022.png",
+	    "https://i.ibb.co/fQ088m1/023.png",
+            // Add more image URLs as needed
+        ];
+
+        // Preload images
+        function preloadImages(urls) {
+            urls.forEach(function(url) {
+                var img = new Image();
+                img.src = url;
+            });
+        }
+
+        // Call preloadImages function with your array of image URLs
+        preloadImages(imageUrls);
+</script>
+<script>
+    
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("header-slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    if (slideIndex >= slides.length) {slideIndex = 0} // Reset slideIndex if it exceeds array length
+    slides[slideIndex].style.display = "block";
+    slideIndex++; // Increment slideIndex after displaying the current slide
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+         document.getElementById("news").addEventListener("click", function() {
+            document.getElementById("content1").style.display = "block";
+            document.getElementById("content2").style.display = "none";
+            document.getElementById("content3").style.display = "none";
+            document.getElementById("content4").style.display = "none";
+            document.getElementById("content5").style.display = "none";
+            // Hide content for other pages and show content for Page 1
+        });
+
+        document.getElementById("music").addEventListener("click", function() {
+            document.getElementById("content1").style.display = "none";
+            document.getElementById("content2").style.display = "block";
+            document.getElementById("content3").style.display = "none";
+            document.getElementById("content4").style.display = "none";
+            document.getElementById("content5").style.display = "none";
+            // Hide content for other pages and show content for Page 2
+        });
+        
+        document.getElementById("merch").addEventListener("click", function() {
+            document.getElementById("content1").style.display = "none";
+            document.getElementById("content2").style.display = "none";
+            document.getElementById("content3").style.display = "block";
+            document.getElementById("content4").style.display = "none";
+            document.getElementById("content5").style.display = "none";
+            // Hide content for other pages and show content for Page 3
+        });
+        document.getElementById("contact").addEventListener("click", function() {
+            document.getElementById("content1").style.display = "none";
+            document.getElementById("content2").style.display = "none";
+            document.getElementById("content3").style.display = "none";
+            document.getElementById("content4").style.display = "block";
+            document.getElementById("content5").style.display = "none";
+            // Hide content for other pages and show content for Page 4
+        });
+        document.getElementById("extras").addEventListener("click", function() {
+            document.getElementById("content1").style.display = "none";
+            document.getElementById("content2").style.display = "none";
+            document.getElementById("content3").style.display = "none";
+            document.getElementById("content4").style.display = "none";
+            document.getElementById("content5").style.display = "block";
+            // Hide content for other pages and show content for Page 5
+        });
+        // Add event listeners for other link images as needed
+    </script>
+</body>
+</html>
