@@ -123,6 +123,54 @@
             
         }
     </style>
+<script>
+    // URLs of all the images on your website
+    var imageUrls = [
+        "https://i.ibb.co/N92Dcs4/news.png",
+        "https://i.ibb.co/MNCR4Qh/music.png",
+	"https://i.ibb.co/7G7tLVT/merch.png",
+	"https://i.ibb.co/6y93N6P/contact.png",
+	"https://i.ibb.co/4g25KQg/extras.png",
+	"https://i.ibb.co/db784YV/madmerch.png",
+	"https://i.ibb.co/2knhsDr/025.png",
+            "https://i.ibb.co/7ScJKpN/001.png",
+            "https://i.ibb.co/tH8L8SW/006.png",
+	    "https://i.ibb.co/f4P5m1v/010.png",
+	    "https://i.ibb.co/Y29HG7W/002.png",
+	    "https://i.ibb.co/Thtkd7W/013.png",
+	    "https://i.ibb.co/w6hchkz/021.png",
+	    "https://i.ibb.co/nQHDhg0/014.png",
+	    "https://i.ibb.co/Pt1c9NY/011.png",
+	    "https://i.ibb.co/BPy7skr/016.png",
+	    "https://i.ibb.co/mN7sWfH/004.png",
+	    "https://i.ibb.co/KG1NDVc/017.png",
+	    "https://i.ibb.co/592tdzv/003.png",
+	    "https://i.ibb.co/Kz3v2RB/018.png",
+	    "https://i.ibb.co/CWhLJ5S/005.png",
+	    "https://i.ibb.co/pWrtTd8/020.png",
+	    "https://i.ibb.co/9VbfG2w/007.png",
+	    "https://i.ibb.co/fDmvVm7/024.png",
+	    "https://i.ibb.co/Mf5YMSV/009.png",
+	    "https://i.ibb.co/F5ZhxVX/012.png",
+	    "https://i.ibb.co/ZK2yWSW/015.png",
+	    "https://i.ibb.co/6FwPkYQ/019.png",
+	    "https://i.ibb.co/FYc75g5/022.png",
+	    "https://i.ibb.co/fQ088m1/023.png",
+        // Add more image URLs here
+    ];
+
+    // Preload images function
+    function preloadImages(urls) {
+        urls.forEach(function(url) {
+            var img = new Image();
+            img.src = url;
+        });
+    }
+
+    // Call the preloadImages function with the array of image URLs
+    preloadImages(imageUrls);
+</script>
+
 </head>
 <body>
     <div class="slideshow-container">
